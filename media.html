@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Media Page</h1>
+    
+    <p>Hi, I'm Hope Akpabio, a student at AltSchool, I am currently practicing my software development. Here are a few media that depicts me.</p>
+    
+    <h2>My Picture</h2>
+    <picture>
+        <source srcset="src/image.jpg" media="(min-width: 1024px)">
+        <source srcset="src/image.jpg" media="(min-width: 768px)">
+        <source srcset="src/image.jpg" media="(max-width: 767px)">
+        <img src="src/image.jpg" alt="My Profile Picture">
+    </picture> 
+    
+    <h2>My Audio Message</h2>
+    <audio controls>
+        <source src="src/8C5AB323-7AA4-4D7E-A17F-AD063E8FCCAD.MP4" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <h2>A short Video of me in my happy place</h2>
+    <video width="320" height="240" controls>
+        <source src="src/8C5AB323-7AA4-4D7E-A17F-AD063E8FCCAD.MP4"video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <h2>Embedded Content</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SrHqvdWY64Q?si=Cf6xSkOEqcEJ8mEe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <p><a href="index.html">Return to Home</a></p>
+</body>
+</html>
