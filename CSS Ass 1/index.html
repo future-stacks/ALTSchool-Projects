@@ -1,23 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otter Essay</title>
+    <style>
+        body {
+            background-color: #202020;
+        }
+        .shadow-box {
+            border: 0px solid white;
+            border-bottom: 20px solid white;
+            background-color: rgba(42, 42, 42, 0.605);
+            width: 45vw;
+            height: 45vh;
+            display: block;
+            margin: auto auto;
+            margin-top: 250px;
+         }
+        .container {
+            position: relative;
+            margin: 20px;
+            width: 55%;
+            height: 47%;
+        }
+  
+        .title {
+            position: absolute;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-align: center;
+            top: -15px;
+            left: 30px;
+            width: 90%;
+            margin: 0 auto;
+            background-color: #e84991;
+            border-radius: 3%;
+            line-height: 20px;
+
+  }
+  
+
+        .otter-text {
+            font-size: 18px;
+            font-family: sans-serif;
+            background-color: #fff;
+            padding: 65px 30px 10px;
+            width: 90%;
+            border-radius: 8px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+      
+    @media (max-width: 1026px) {
+    .shadow-box, .container, .otter-text, .title{
+       width: fit-content;
+       height: fit-content
+    }
+  
+    .container {
+      padding-right: 4rem;
+      padding-bottom: 4rem;
+    }
+  
+    .title {
+      padding: 0 2rem;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .shadow-box {
+      padding-bottom: 40px;
+      padding-right: 40px;
+    }
+  
+    .otter-text {
+     width: 270px;
+    }
+}
+    </style>
 </head>
 <body>
-  <div class="outer-box">
+    <div class="shadow-box"></div>
     <div class="container">
-      <div class="essay">
-        <h3>An Otter Essay</h3>
-      </div>
-      <div class="text-box">
-        <p>Otters have long slim bodies and relatively short limbs. Their most striking anatomical features are the powerful webbed feet used to swim, 
-          and their seal-like abilities holding breath underwater.
+        <div class="title">An Otter Essay</div>
+        <p class="otter-text">
+            Otters have long, slim bodies and relatively short limbs. Their most striking anatomical features are the powerful webbed feet used to swim, and their seal-like abilities holding breath underwater.
         </p>
-      </div>
     </div>
-  </div>
 </body>
 </html>
