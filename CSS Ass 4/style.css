@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f5f8fa;
+    color: #1d2c3c;
+    line-height: 1.5;
+}
+
+/* Header styles */
+.site-header {
+    background: white;
+    border-bottom: 1px solid #e0e6ea;
+    padding: 0 1rem;
+    height: 64px;
+}
+
+.header-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1d2c3c;
+    font-weight: 600;
+}
+
+.brand-logo img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.navigation {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.navigation a {
+    color: #1d2c3c;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #1179bf;
+}
+
+.account-link {
+    border: 1px solid #e0e6ea;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.account-link:hover {
+    border-color: #1179bf;
+}
+
+/* Main content */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.checkout-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+/* Checkout form */
+.checkout-form {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding-bottom: 2rem;
+}
+
+.form-title {
+    font-size: 1.875rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    text-shadow: 0px 4px 4px 0px #00000040;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.form-section {
+    margin-bottom: 2rem;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #1179bf;
+    border-radius: 50%;
+    color: #1179bf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-headline {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    margin-bottom: 1rem;
+}
+
+.field-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e0e6ea;
+    border-radius: 4px;
+    background: #f5f8fa;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #1179bf;
+}
+
+.card-input-wrapper {
+    position: relative;
+}
+
+.card-details {
+    display: flex;
+    gap: 8px;
+    margin-top: 0.5rem;
+}
+
+.card-details input {
+    flex: 1;
+}
+
+.purchase-button {
+    width: 100%;
+    padding: 1rem;
+    background: #038e7d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.purchase-button:hover {
+    background: #027b6c;
+}
+
+.support-text {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.support-text a {
+    color: #1179bf;
+    text-decoration: none;
+}
+
+.support-text a:hover {
+    text-decoration: underline;
+}
+
+.stripe-logo {
+    text-align: center;
+}
+
+/* Pricing sidebar */
+.pricing-info {
+    background: #1179bf;
+    color: white;
+    padding: 2rem;
+}
+
+.plan-title {
+    margin-bottom: 1rem;
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    width: 93px;
+    height: 24px;
+}
+
+.price-display {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 72px;
+    letter-spacing: -0.014999999664723873px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.billing-cycle {
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    letter-spacing: -0.014999999664723873px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.currency {
+    font-family: "Lato";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    letter-spacing: -0.014999999664723873px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.renewal-notice {
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.plan-features li::before {
+    content: "✓";
+    font-size: 1.25rem;
+}
+
+.upgrade-prompt {
+    margin-bottom: 3rem;
+}
+
+.upgrade-prompt a {
+    color: white;
+    text-decoration: underline;
+}
+
+.upgrade-prompt a:hover {
+    text-decoration: none;
+}
+
+.user-testimonial {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 2rem;
+    padding-bottom: 12rem;
+}
+
+.testimonial-quote {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial-author img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.875rem;
+}
+
+.site-footer a {
+    color: #1179bf;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .checkout-layout {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .input-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-details {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 0;
+    }
+
+    .card-details input {
+        width: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-wrapper {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .navigation a {
+        padding: 0.5rem;
+    }
+
+    .checkout-form,
+    .pricing-info {
+        padding: 1rem;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+
+    .section-headline {
+        font-size: 1rem;
+    }
+
+    .price-display {
+        font-size: 2.5rem;
+    }
+}
